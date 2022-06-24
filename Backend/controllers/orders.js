@@ -82,6 +82,4 @@ module.exports = {
   getAll,
   getOrder,
   createOrder,
-//   updateCommand,
-//   deleteCommand
 };

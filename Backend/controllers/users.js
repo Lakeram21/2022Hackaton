@@ -49,7 +49,7 @@ try {
    {
     return res.status(400).json(error)
    }
-     // create a new command
+     // create a new user
     const user = {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
@@ -81,6 +81,4 @@ module.exports = {
   getAll,
   getUser,
   createUser,
-//   updateCommand,
-//   deleteCommand
 };
