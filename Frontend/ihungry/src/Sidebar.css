@@ -1,6 +1,28 @@
 .navbar {
-  background-color: black;
+
+  background-color: rgb(183, 183, 183);
   width: 250px;
-  height: 800px;
+  height: 100vh;
   float: left;
+
+}
+
+.logo {
+
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 300px;
+
+}
+
+.menu-icons {
+
+  background-color: rgb(255, 255, 255);
+  width: 150px;
+  height: 75px;
+  margin-bottom: 30px;
+
 }
