@@ -4,7 +4,11 @@ import "./Sidebar.css";
 function SideBar() {
   return (
     <div class="navbar">
-      <div class="menu-icons"></div>
+      <div className="logo">LOGO</div>
+      <div className="menu-icons">MENU</div>
+      <div className="menu-icons">ORDERS</div>
+      <div className="menu-icons">FAVORITES</div>
+      
       <div></div>
     </div>
   );
