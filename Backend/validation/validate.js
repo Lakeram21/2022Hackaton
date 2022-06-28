@@ -9,7 +9,8 @@ const CreateUserBodyValid = async (body)=>{
                 firstName: Joi.string().min(3).max(10).required(),
                 lastName: Joi.string().min(3).max(10).required(),
                 email: Joi.string().email().required(),
-                password: Joi.string().required()
+                password: Joi.string().required(),
+                role:Joi.string().required()
                
         })
         return schema.validate(body);
@@ -21,9 +22,13 @@ const CreateUserBodyValid = async (body)=>{
 const CreateOrderBodyValid = async (body)=>{
     const schema = Joi.object({
                 price: Joi.number().required(),
-                item: Joi.array().required(),
                 customerEmail: Joi.string().email().required(),
-                quantity: Joi.number().required()
+                item: Joi.array().required().required(),
+                customerName: Joi.string().required(),
+                resturant : Joi.string().required(),
+                location: Joi.string(),
+                quantity: Joi.number().required(),
+                status: Joi.string().required()
                
         })
         return schema.validate(body);
