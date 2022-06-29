@@ -48,6 +48,7 @@
     {
         "name":"Chick-Fil-A",
         "image":"./chickfila.png",
+        "banner":"./chickfilabaner.png",
         "categories":["chicken", "meat", "fries", "burgers"],
         "menu":{
             "chicken sandwich": 4.15,
