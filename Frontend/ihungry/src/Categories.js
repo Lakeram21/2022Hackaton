@@ -4,8 +4,11 @@ import all from './img/all.png'
 import burger from './img/burgers.png'
 import pizza from './img/pizza.png';
 import salads from './img/salad.png'
+import noodles from './img/noodles.png'
+import curry from './img/curry.png'
 import {FaChevronCircleLeft, FaChevronCircleRight} from 'react-icons/fa'
 import { CategoryContext } from './MainMenu'
+
 
 function Categories() {
 
@@ -22,10 +25,6 @@ function Categories() {
         var slider = document.getElementById('slider2')
         slider.scrollLeft = slider.scrollLeft + 500;
     } 
-
-    // const handleCategory= (value) => {
-    //     setSelectedCategory=value
-    // } 
 
     return (
         <div className='categories'>
@@ -64,25 +63,19 @@ function Categories() {
                 </div>
 
                 <div className='inline-block pr-5 pt-1 pl-5 cursor-pointer hover:scale-105 ease-in-out duration-300 '>
-                    <div className='categories-items'>
-                        <div className='images-categories'><img src={burger} width='50px' style={{paddingTop:'30px'}}></img></div>
-                        <p style={{paddingTop:'10px'}}>burger</p>
+                    <div className='categories-items' onClick={() => setSelectedCategory('noodles')}>
+                        <div className='images-categories'><img src={noodles} width='50px' style={{paddingTop:'20px', paddingLeft:'5px'}}></img></div>
+                        <p style={{paddingTop:'10px'}}>Noodles</p>
                     </div>
                 </div>
 
                 <div className='inline-block pr-5 pt-1 pl-5 cursor-pointer hover:scale-105 ease-in-out duration-300 '>
-                    <div className='categories-items'>
-                        <div className='images-categories'><img src={pizza} width='50px' style={{paddingTop:'20px'}}></img></div>
-                        <p style={{paddingTop:'10px'}}>Pizza</p>
+                    <div className='categories-items' onClick={() => setSelectedCategory('indian')}>
+                        <div className='images-categories'><img src={curry} width='50px' style={{paddingTop:'30px'}}></img></div>
+                        <p style={{paddingTop:'10px'}}>Indian</p>
                     </div>
                 </div>
-                
-                <div className='inline-block pr-5 pt-1 pl-5 cursor-pointer hover:scale-105 ease-in-out duration-300 '>
-                    <div className='categories-items'>
-                        <div className='images-categories'><img src={salads} width='50px' style={{paddingTop:'25px'}}></img></div>
-                        <p style={{paddingTop:'10px'}}>Salads</p>
-                    </div>
-                </div>
+
 
             </div>
             <span style={{float:'right', paddingTop:'50px'}}>
