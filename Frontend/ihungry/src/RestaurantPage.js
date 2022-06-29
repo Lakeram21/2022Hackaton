@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom';
+import MenuItem from './MenuItem';
 
 function RestaurantPage({restaurant}) {
     const [selectedResturant, setSelectedRest] = useState()
@@ -19,6 +20,7 @@ function RestaurantPage({restaurant}) {
             </div>
             <div>
                 <p>Today’s Menu</p>
+                <MenuItem menu={data.menu}/>
             </div>
         </div>
         

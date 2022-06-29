@@ -25,7 +25,7 @@ function MainMenu() {
            <CategoryContext.Provider value={{selectedCategory, setSelectedCategory}}>
                 <Categories />
                 <Restaurants />
-                <MenuItem/>
+                {/* <MenuItem/> */}
             </CategoryContext.Provider>
         </div>
     )
