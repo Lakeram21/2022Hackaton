@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongodb = require('./database/dbConnection');
-
+const cors = require('cors');
 const port = process.env.PORT || 8080;
 const app = express();
 require('dotenv').config()
@@ -28,13 +28,9 @@ app.get('/', (req, res) => {
 });
 
 app
+  .use(cors())
   .use(bodyParser.json())
-  .use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-    next();
-  })
-  .use('/', require('./routes'));
+  .use('/', require("./routes"))
 
 mongodb.initDb((err) => {
   if (err) {

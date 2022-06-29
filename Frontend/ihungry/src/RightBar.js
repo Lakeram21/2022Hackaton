@@ -1,6 +1,4 @@
 import React from "react";
-import "./Orders";
-import Orders from "./Orders";
 import "./RightBar.css";
 
 function RightBar() {
@@ -11,7 +9,6 @@ function RightBar() {
       </div>
       <div className="profile-picture">Profile</div>
       <div className="promotions">Promotions</div>
-      <Orders />
     </div>
   );
 }

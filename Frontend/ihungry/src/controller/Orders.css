@@ -1,0 +1,27 @@
+.orders-title {
+  font-size: 25px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.orders-items {
+  height: 80px;
+  width: 300px;
+  border-radius: 30px;
+  background-color: white;
+  float: left;
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+.order_form
+{
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.form
+{
+  margin: auto;
+  width: 400px;
+  margin-top: 20px;
+}
