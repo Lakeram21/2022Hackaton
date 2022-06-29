@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom';
-import MenuItem from './MenuItem';
+import WelcomeSearch from './WelcomeSearch';
 
 function RestaurantPage({restaurant}) {
     const [selectedResturant, setSelectedRest] = useState()
@@ -13,8 +13,8 @@ function RestaurantPage({restaurant}) {
 //    }, [selectedResturant])
     return (
         <div>
-            <h1>{data.name}</h1>
-            <img src='#' alt={`${data.name} banner image`}/>
+            <WelcomeSearch dataRest={data}/>
+            <img src={data.banner} alt={`${data.name} banner image`} className='banner'/>
             <div>
                 <p> ❤️ Your favorites from Chick-fill-a</p>
             </div>

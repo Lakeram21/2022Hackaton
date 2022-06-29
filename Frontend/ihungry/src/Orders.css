@@ -1,18 +1,16 @@
 .orders {
-  width:80%;
+  width: 80%;
 }
 
 .orders-title {
-  font-size: 25px;
-  margin-left: 10px;
-  margin-top: 10px;
+  font-size: 22px;
+  font-family: "Raleway";
 }
 .orders-items {
-  height: 80px;
+  height: 90px;
   border-radius: 30px;
-  background-color: white;
+  background-color: red;
   width: 100%;
-  float: left;
-  margin-left: 25px;
+  clear: both;
   margin-bottom: 20px;
 }
