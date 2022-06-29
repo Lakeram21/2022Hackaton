@@ -1,28 +1,52 @@
 .info-bar {
-  background-color: #F9CA26;
-  width: 30%;
+  background-color: #f9ca26;
+  width: 25%;
   height: 100vh;
   float: right;
 }
 
 .username {
-  font-size: 12px;
+  font-family: "Raleway";
+  width: 250px;
+  height: 60px;
+  background-color: #fce184;
+  border-radius: 50px;
+  margin-top: 30px;
+  margin-left: 70px;
+  padding-left: 36px;
+  float: left;
 }
 
 .profile-picture {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   background-color: rgb(255, 255, 255);
-  margin-top: -25px;
-  margin-bottom: 50px;
-  margin-right: 15px;
+  float: left;
+  margin-top: 30px;
+  margin-left: -48px;
+  margin-bottom: 30px;
   border-radius: 300px;
 }
 
 .promotions {
   height: 130px;
-  width: 70%;
+  width: 80%;
   border-radius: 30px;
   background-color: white;
-  margin-left: 25px;
+  margin-left: 42px;
+  clear: both;
+}
+
+.checkout-btn {
+  color: white;
+  font-size: 20px;
+  width: 70%;
+  height: 60px;
+  background-color: #ff8a00;
+  border-radius: 40px;
+  margin-top: 20px;
+  margin-left: 55px;
+  padding: 15px 20px 15px 20px;
+  font-family: "Raleway";
+  float: left;
 }

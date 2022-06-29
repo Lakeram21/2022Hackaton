@@ -1,0 +1,10 @@
+.checkout_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  margin: auto;
+  width: 400px;
+  margin-top: 20px;
+}
