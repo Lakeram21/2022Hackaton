@@ -27,6 +27,7 @@ function MainMenu() {
                 <Restaurants />
                 {/* <MenuItem/> */}
             </CategoryContext.Provider>
+            <Favorite/>
         </div>
     )
 }
