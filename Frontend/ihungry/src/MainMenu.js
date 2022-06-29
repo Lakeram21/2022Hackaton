@@ -4,6 +4,7 @@ import Categories from './Categories'
 import Restaurants from './Restaurants'
 import Favorite from './Favorite'
 import {FaSearch} from 'react-icons/fa'
+import MenuItem from './MenuItem'
 
 export const CategoryContext = createContext()
 
@@ -24,7 +25,7 @@ function MainMenu() {
            <CategoryContext.Provider value={{selectedCategory, setSelectedCategory}}>
                 <Categories />
                 <Restaurants />
-                <Favorite />
+                <MenuItem/>
             </CategoryContext.Provider>
         </div>
     )

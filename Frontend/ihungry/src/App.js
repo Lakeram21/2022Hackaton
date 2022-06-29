@@ -5,6 +5,7 @@ import SideBar from "./SideBar";
 import "./RightBar";
 import RightBar from "./RightBar";
 import Order from "./controller/Orders"
+import MenuItem from "./MenuItem";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import RestaurantPage from "./RestaurantPage";
 import { useState } from "react";
@@ -23,6 +24,7 @@ function App() {
       <Router>
       <SideBar />
       <RightBar />
+      
       <Routes>
         <Route path ='/' exact element= {<MainMenu/>}/>
         <Route path='/orders' exact element={<Order />} />
