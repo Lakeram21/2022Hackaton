@@ -18,11 +18,11 @@ function RestaurantPage({restaurant}) {
             <img src={data.banner} alt={`${data.name} banner image`} className='banner'/>
             <div className='favorites'>
                 <p> ❤️ Your favorites from {data.name}</p>
-                <MenuItem menu={data.menu}/>
+                <MenuItem menu={data.menu} image={data.image_menu}/>
             </div>
             <div className='today-menu'>
                 <p>Today’s Menu</p>
-                <MenuItem menu={data.menu}/>
+                <MenuItem menu={data.menu} image={data.image_menu}/>
             </div>
         </div>
         

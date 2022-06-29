@@ -4,9 +4,11 @@ import './MenuItem.css'
 import spice from './img/spicy-sandwich.png'
 
 
-function MenuItem({menu}) {
+function MenuItem({menu, image}) {
     const menu2= menu
-console.log("This is menu", menu);
+console.log("This is menu", menu2);
+console.log("image", image)
+
     return (
         <div className='menu-item'>
             {/* <div className='img'><img src={spice} alt="item-image"></img></div>
@@ -19,7 +21,7 @@ console.log("This is menu", menu);
 
             {Object.keys(menu2).map((key, value) => (
                 <div className='ItemContainer'>
-                    <div className='img'><img src={spice} alt="item-image"></img></div>
+                    <div className='img'><img src={image} alt="item-image"></img></div>
                     <h1 className='title'>{key}</h1>
                     <p className='description'>A boneless breast of chicken seasoned to perfection, freshly breaded,</p>
                     <p className='price'>${menu2[key]}</p>
