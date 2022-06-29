@@ -1,27 +1,59 @@
 [
     {
         "name":"Shaka Shak",
-        "image":"./shakashak.png"
-
+        "image":"./shakashak.png",
+        "categories":["salad", "meat", "hawaiian"],
+        "menu":{
+            "moku plate 1 entree": 4.99,
+            "moana plate 2 entree": 7.29
+        }
     },
     {
         "name":"Oriental Dragon",
-        "image":"./orientaldragon.png"
-    
+        "image":"./orientaldragon.png",
+        "categories":["meat", "noodles", "rice", "asian"],
+        "menu":{
+            "chinese plate small": 4.99,
+            "chinese plate large": 6.99
+        }
     },
     {
         "name":"Fire & Slice",
-        "image":"./fire&slice.png"
-    
+        "image":"./fire&slice.png",
+        "categories":["pizza", "meat"],
+        "menu":{
+            "cheese": 4,
+            "pepperoni": 5,
+            "specialty": 6
+        }
     },
     {
-        "name":"Fire & Slice",
-        "image":"./fire&slice.png"
-    
+        "name":"Shakers Salad",
+        "image":"./shakersalad.png",
+        "categories":["salad", "meat"],
+        "menu":{
+            "small salad": 5.29,
+            "large salad": 6.99
+        }
     },
     {
-        "name":"Fire & Slice",
-        "image":"./fire&slice.png"
-    
+        "name":"Curry On",
+        "image":"./curryon.png",
+        "categories":["curry", "meat", "indian"],
+        "menu":{
+            "chicken tikka masala": 6.99,
+            "butterchicken": 6.99
+        }
+    },
+    {
+        "name":"Chick-Fil-A",
+        "image":"./chickfila.png",
+        "banner":"./chickfilabaner.png",
+        "categories":["chicken", "meat", "fries", "burgers"],
+        "menu":{
+            "chicken sandwich": 4.15,
+            "spicy chicken": 4.49,
+            "fries": 2.15
+        }
     }
 ]

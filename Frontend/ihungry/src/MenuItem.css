@@ -1,0 +1,50 @@
+.ItemContainer{
+width: 252px;
+border: 3px solid #F9CA26;
+border-radius: 30px;
+clear: both;
+padding: 20px;
+height: 430px;
+}
+
+
+h1{
+text-align: center;
+padding-top: 0;
+}
+.img{
+   
+    width: 80%;
+    padding-top: 0;
+}
+
+.description {
+    width: 100%;
+   
+}
+
+.description p {
+    color: gray;
+    font-weight: lighter;
+}
+
+.price{
+    float:left;
+    padding-left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top:20px;
+}
+
+button{
+    background-color: coral;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    float: right;
+    width: 100px;
+    text-align: center;
+    margin-top:20px;
+    font-size: 15px;
+    
+}
