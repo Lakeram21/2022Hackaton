@@ -7,7 +7,7 @@ import spice from './img/spicy-sandwich.png'
 function MenuItem({menu}) {
 console.log("This is menu", menu);
     return (
-        <div>
+        <div className='menu-item'>
             {/* <div className='img'><img src={spice} alt="item-image"></img></div>
             <div className='description'>
             <h1 className='title'>Spicy Sandwich Chicken</h1>
@@ -20,16 +20,12 @@ console.log("This is menu", menu);
 
             {Object.entries(menu).map((key, value) => (
                 <div className='ItemContainer'>
-                 <div className='img'><img src={spice} alt="item-image"></img></div>
-                 <div className='description'>
-                 <h1 className='title'>{key}</h1>
-                 <p >A boneless breast of chicken seasoned to perfection, freshly breaded, 
-     
-                 </p>
-                 </div>
-                 <span className='price'>{value}</span>
-                 <button >Add</button> 
-                 </div>
+                    <div className='img'><img src={spice} alt="item-image"></img></div>
+                    <h1 className='title'>{key}</h1>
+                    <p className='description'>A boneless breast of chicken seasoned to perfection, freshly breaded,</p>
+                    <p className='price'>{value}</p>
+                    <button >Add</button> 
+                </div>
             ))}
          
         </div>

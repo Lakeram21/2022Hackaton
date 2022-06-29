@@ -1,5 +1,12 @@
+.today-menu {
+    width: auto;
+    margin-bottom: 20px;
+}
 .restaurantpage {
-    margin-left: 200px;
+    width: 900px;
+    height: 100vh;
+    margin-left: 240px;
+   
 }
 .banner {
     border-radius: 20px;
@@ -8,8 +15,20 @@
 h1 {
     margin-top: 20px;
 }
+.favorites {
+    min-height: 450px;
+}
 .favorites p {
     margin-top: 20px;
+    margin-bottom: 70px;
+    font-size: 25px;
+    font-family: 'Raleway';
+    text-align: left;
+}
+
+.today-menu p {
+    margin-top: 20px;
+    margin-bottom: 60px;
     font-size: 25px;
     font-family: 'Raleway';
     text-align: left;

@@ -7,7 +7,7 @@ function SideBar() {
   return (
     <div className="navbar">
       <div className="logo"><img src={logo} width='125px'></img></div>
-      <div className="menu-icons"><span><FaHome/></span>Home</div>
+      <a href="/"><div className="menu-icons"><span><FaHome/></span>Home</div></a>
       <div className="menu-icons"><span><FaReceipt/></span>Menu</div>
       <div className="menu-icons"><span><FaShoppingBag/></span>Orders</div>
       <div className="menu-icons"><span><FaHeart/></span>Favorites</div>

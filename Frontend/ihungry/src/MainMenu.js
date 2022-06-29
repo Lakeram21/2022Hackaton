@@ -17,7 +17,7 @@ function MainMenu() {
         <div className='menu'>
             <div className='welcome-search'>
                 <h1>Welcome to Crossdrop ✨</h1>
-                <i style={{position:'absolute', marginTop:'35px', marginLeft:'70px', color:'#9ca3af'}}>{<FaSearch size={'20px'}/>}</i>
+                <i style={{position:'absolute', marginTop:'15px', marginLeft:'70px', color:'#9ca3af'}}>{<FaSearch size={'20px'}/>}</i>
                 <input className='search-bar' type={'text'} placeholder={'Search'}>
                     
                 </input>
