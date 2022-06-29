@@ -1,15 +1,14 @@
-import React, { useState, useEffect} from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import './Restaurants.css'
-// import shaka from './img/80630.png'
-// import wraps from './img/80628.png'
-// import oriental from './img/80622.png'
-// import fire from './img/80619.png'
 import {FaChevronCircleLeft, FaChevronCircleRight} from 'react-icons/fa'
+import {Link} from "react-router-dom"
+import { CategoryContext } from './MainMenu'
 
 
 function Restaurants() {
 
     const [resturants,setRestaurants]=useState([]);
+    const {selectedCategory, setSelectedCategory} = useContext(CategoryContext)
 
     const getData=()=>{
         fetch('./rest.json').then(function(response){
@@ -17,14 +16,21 @@ function Restaurants() {
              return response.json();
            })
            .then(function(myJson) {
-             console.log(myJson);
-             setRestaurants(myJson)
+            if (selectedCategory !== 'all') {
+                let filteredRest = myJson.filter(rest => rest.categories.includes(selectedCategory))
+                console.log(myJson);
+                setRestaurants(filteredRest)
+            } else {
+                console.log(myJson);
+                setRestaurants(myJson)
+            }
+            
            });
         }
 
     
 
-    useEffect(()=>{getData()},[])
+    useEffect(()=>{getData()},[selectedCategory])
 
     const slideLeft = () => {
         var slider = document.getElementById('slider')
@@ -39,6 +45,7 @@ function Restaurants() {
         <div className='inline-block pr-5 pt-1 pl-5 cursor-pointer hover:scale-105 ease-in-out duration-300 '><img src='#' width='125px'></img>{resturant.name}</div>
     })
   
+    console.log('this is rest', selectedCategory)
     return (
         <div className='resturants'>
             <h1>Restaurants</h1>
@@ -48,8 +55,9 @@ function Restaurants() {
             <div id='slider' className='w-[680px] h-[170px] overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide' style={{float:'left'}}>
                 
                 {resturants.map((resturant) => {
+                
                     return(
-                        <div className='inline-block pr-5 pt-1 pl-5 cursor-pointer hover:scale-105 ease-in-out duration-300 '><img src={resturant.image} width='125px'></img></div>
+                        <Link to = '/restaurantpage'><div className='inline-block pr-5 pt-1 pl-5 cursor-pointer hover:scale-105 ease-in-out duration-300 '><img src={resturant.image} width='125px'></img></div></Link>
                         )
                 })}            
             </div>
