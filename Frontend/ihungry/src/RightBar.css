@@ -32,12 +32,13 @@
 }
 
 .promotions {
-  height: 130px;
+  
   width: 80%;
   border-radius: 30px;
   background-color: white;
   margin-left: 42px;
   clear: both;
+ 
 }
 
 .checkout-btn {

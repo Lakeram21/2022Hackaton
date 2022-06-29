@@ -1,6 +1,7 @@
 import React from "react";
 import "./RightBar.css";
 import Orders from "./Orders";
+import promo from './img/promo.png'
 
 function RightBar() {
   return (
@@ -11,7 +12,7 @@ function RightBar() {
         </h1>
       </div>
       <div className="profile-picture">Profile</div>
-      <div className="promotions">Promotions</div>
+      <img className="promotions" src={promo}></img>
       <Orders />
       <div className="checkout-btn">Checkout</div>
     </div>
