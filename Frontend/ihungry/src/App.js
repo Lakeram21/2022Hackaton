@@ -1,10 +1,8 @@
 import "./App.css";
 import MainMenu from "./MainMenu";
-import "./SideBar";
 import SideBar from "./SideBar";
-import "./RightBar";
 import RightBar from "./RightBar";
-import Order from "./controller/Orders"
+import Checkout from "./controller/Checkout";
 import MenuItem from "./MenuItem";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import RestaurantPage from "./RestaurantPage";
@@ -19,18 +17,16 @@ function App() {
   return (
     <div className="App">
       <header className="App-header"></header>
-     
 
       <Router>
-      <SideBar />
-      <RightBar />
-      
-      <Routes>
-        <Route path ='/' exact element= {<MainMenu/>}/>
-        <Route path='/orders' exact element={<Order />} />
-        <Route path='/restaurantpage' exact element={<RestaurantPage />} />
-      </Routes>
-    </Router>
+        <SideBar />
+        <RightBar />
+        <Routes>
+          <Route path="/" exact element={<MainMenu />} />
+          <Route path="/Checkout" exact element={<Checkout />} />
+          <Route path='/restaurantpage' exact element={<RestaurantPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

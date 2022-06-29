@@ -21,6 +21,7 @@ function RestaurantPage({restaurant}) {
             </div>
             <div>
                 <p>Today’s Menu</p>
+                <MenuItem menu={data.menu}/>
             </div>
         </div>
         
