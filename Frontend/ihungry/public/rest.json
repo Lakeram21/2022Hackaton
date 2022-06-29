@@ -29,7 +29,7 @@
     },
     {
         "name":"Shakers Salad",
-        "image":"./fire&slice.png",
+        "image":"./shakersalad.png",
         "categories":["salad", "meat"],
         "menu":{
             "small salad": 5.29,
@@ -38,7 +38,7 @@
     },
     {
         "name":"Curry On",
-        "image":"./fire&slice.png",
+        "image":"./curryon.png",
         "categories":["curry", "meat", "indian"],
         "menu":{
             "chicken tikka masala": 6.99,
@@ -47,7 +47,7 @@
     },
     {
         "name":"Chick-Fil-A",
-        "image":"./fire&slice.png",
+        "image":"./chickfila.png",
         "categories":["chicken", "meat", "fries", "burgers"],
         "menu":{
             "chicken sandwich": 4.15,

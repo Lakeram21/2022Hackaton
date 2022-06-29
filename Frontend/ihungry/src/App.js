@@ -24,7 +24,7 @@ function App() {
       <Router>
       <SideBar />
       <RightBar />
-      <MenuItem/>
+      
       <Routes>
         <Route path ='/' exact element= {<MainMenu/>}/>
         <Route path='/orders' exact element={<Order />} />
