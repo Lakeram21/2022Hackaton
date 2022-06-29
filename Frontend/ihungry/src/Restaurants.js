@@ -57,7 +57,7 @@ function Restaurants() {
                 {resturants.map((resturant) => {
                 
                     return(
-                        <Link to = '/restaurantpage'><div className='inline-block pr-5 pt-1 pl-5 cursor-pointer hover:scale-105 ease-in-out duration-300 '><img src={resturant.image} width='125px'></img></div></Link>
+                        <Link to = {'/restaurantpage'} state={resturant}><div className='inline-block pr-5 pt-1 pl-5 cursor-pointer hover:scale-105 ease-in-out duration-300 '><img src={resturant.image} width='125px'></img></div></Link>
                         )
                 })}            
             </div>
