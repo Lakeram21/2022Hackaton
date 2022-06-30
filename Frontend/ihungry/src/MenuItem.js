@@ -1,13 +1,27 @@
-import React from 'react'
+import React, { useContext} from 'react'
 import './MenuItem.css'
+import { OrderContext } from './App'
+
+
 
 import spice from './img/spicy-sandwich.png'
 
 
 function MenuItem({menu, image}) {
     const menu2= menu
-console.log("This is menu", menu2);
-console.log("image", image)
+
+    const {selectedItem, setSelectedItem} = useContext(OrderContext)
+
+    function sayhello(itemPrice, itemName)
+
+    {
+
+        console.log("Hello", itemPrice, itemName)
+
+        const newSelect= {price: itemPrice, name: itemName}
+        setSelectedItem([...selectedItem, newSelect]);
+
+    }
 
     return (
         <div className='menu-item'>
@@ -25,7 +39,7 @@ console.log("image", image)
                     <h1 className='title'>{key}</h1>
                     <p className='description'>A boneless breast of chicken seasoned to perfection, freshly breaded,</p>
                     <p className='price'>${menu2[key]}</p>
-                    <button >Add</button> 
+                    <button onClick={() => sayhello(menu2[key], key)}>Add</button> 
                 </div>
             ))}
          

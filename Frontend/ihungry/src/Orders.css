@@ -5,12 +5,41 @@
 .orders-title {
   font-size: 22px;
   font-family: "Raleway";
+  
 }
 .orders-items {
   height: 90px;
   border-radius: 30px;
-  background-color: red;
+  background-color: #FFF1C1;
   width: 100%;
   clear: both;
   margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: left;
+}
+
+.image-orders {
+  width: 80px;
+  height: 50px;
+  margin: 0;
+  margin-top: 7px;
+  margin-left: 10px;
+  
+}
+.name-order p {
+  font-size: 20px;
+  padding-top: 10px;
+  text-align: left !important;
+
+}
+
+.price-orders {
+  font-size: 20px;
+  padding-top: -60px;
+  float: left;
+  text-align: left !important;
+  grid-row: 2/3;
+  grid-column: 2/3;
 }
